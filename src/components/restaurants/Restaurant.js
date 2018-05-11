@@ -9,7 +9,7 @@ class Restaurant extends Component {
       id: this.props.restaurant.id
     });
   }
-  
+
   render() {
     const { text, id } = this.props.restaurant;
 
@@ -18,7 +18,7 @@ class Restaurant extends Component {
         <li>
           {text}
           <button onClick={() => this.handleOnClick()}> X </button>
-          <ReviewInput 
+          <ReviewInput
             store={this.props.store}
             restaurantId={id} />
         </li>
